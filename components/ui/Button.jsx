@@ -16,9 +16,18 @@ const sizes = {
 /**
  * Call-to-action button.
  * Internal paths ("/contact") use next/link; tel:, mailto: and https: links use <a>.
+ * With no `href` it renders a real <button> — use that for form submits.
  */
-export default function Button({ href, children, variant = "brand", size = "md", className = "", ...props }) {
-  const classes = `group/btn inline-flex items-center justify-center gap-2 rounded-xl text-center font-semibold transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure ${variants[variant]} ${sizes[size]} ${className}`;
+export default function Button({ href, children, variant = "brand", size = "md", className = "", type = "button", ...props }) {
+  const classes = `group/btn inline-flex items-center justify-center gap-2 rounded-xl text-center font-semibold transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure disabled:cursor-not-allowed disabled:opacity-60 ${variants[variant]} ${sizes[size]} ${className}`;
+
+  if (!href) {
+    return (
+      <button type={type} className={classes} {...props}>
+        {children}
+      </button>
+    );
+  }
 
   if (href.startsWith("/")) {
     return (

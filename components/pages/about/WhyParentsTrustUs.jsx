@@ -2,15 +2,14 @@ import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
-import { contact } from "@/lib/siteData";
+import { contact, trustIcons } from "@/lib/siteData";
 import { PhoneIcon } from "@/components/ui/Icons";
 
-// Icons are the originals from chennai.ssbabysitter.com
 const trustPoints = [
-  { icon: "/icons/languages.png", title: "Multilingual caregivers", text: "English, Telugu, Malayalam and more" },
-  { icon: "/icons/reliability.png", title: "Verified, background-checked", text: "Local babysitting services" },
-  { icon: "/icons/money.png", title: "Affordable, transparent", text: "Service charges" },
-  { icon: "/icons/guarantee-1.png", title: "Replacement guarantee", text: "If a match isn't right" },
+  { icon: trustIcons.languages, title: "Multilingual caregivers", text: "English, Telugu, Malayalam and more" },
+  { icon: trustIcons.reliability, title: "Verified, background-checked", text: "Local babysitting services" },
+  { icon: trustIcons.money, title: "Affordable, transparent", text: "Service charges" },
+  { icon: trustIcons.guarantee, title: "Replacement guarantee", text: "If a match isn't right" },
 ];
 
 // Animation: heading comes into focus from a blur, tiles rise in a wave with icons popping.

@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [{ protocol: "https", hostname: "images.pexels.com" }],
+    // All site images are hosted on Cloudinary (see lib/siteData.js) and are
+    // served directly from there, resized by Cloudinary.
+    loader: "custom",
+    loaderFile: "./lib/cloudinaryLoader.js",
   },
 };
 

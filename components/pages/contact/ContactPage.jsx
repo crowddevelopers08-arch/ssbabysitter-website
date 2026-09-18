@@ -1,6 +1,7 @@
 import PageHero from "@/components/ui/PageHero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
+import EnquiryForm from "@/components/ui/EnquiryForm";
 import Reveal from "@/components/ui/Reveal";
 import { ClockIcon, MailIcon, PhoneIcon, PinIcon, WhatsAppIcon } from "@/components/ui/Icons";
 import { contact, images } from "@/lib/siteData";
@@ -32,6 +33,36 @@ export default function ContactPage() {
           { label: "Contact", href: "/contact" },
         ]}
       />
+
+      {/* Enquiry form */}
+      <section className="bg-white py-12 sm:py-20 md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-8 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <div className="lg:sticky lg:top-28">
+              <SectionHeading
+                variant="from-left"
+                eyebrow="Send an Enquiry"
+                title="Tell us what your family needs"
+                subtitle="Share a few details and our team will call you back to understand your requirement and shortlist the right caregiver."
+              />
+              <Reveal variant="fade-up" delay={200} className="mt-6 rounded-3xl border border-ink/5 bg-sand p-5 sm:mt-8 sm:p-6">
+                <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">Prefer to talk?</p>
+                <p className="mt-2 leading-relaxed text-graphite">
+                  Call or message us on {contact.phoneDisplay} — we answer during working hours and can usually share
+                  caregiver profiles the same day.
+                </p>
+              </Reveal>
+            </div>
+          </div>
+
+          <Reveal
+            variant="fade-up"
+            className="rounded-3xl border border-ink/5 bg-white p-6 shadow-card sm:rounded-4xl sm:p-8 lg:col-span-7"
+          >
+            <EnquiryForm />
+          </Reveal>
+        </div>
+      </section>
 
       <section className="bg-blush py-12 sm:py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">

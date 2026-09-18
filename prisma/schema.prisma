@@ -1,0 +1,48 @@
+// Leads captured by the website enquiry form.
+// Database: Neon (serverless Postgres). See .env.example for the two URLs Neon gives you.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  // Pooled connection (…-pooler.…neon.tech) — used by the app at runtime.
+  url = env("DATABASE_URL")
+  // Direct connection — used by `prisma migrate`, which can't run through the pooler.
+  directUrl = env("DIRECT_URL")
+}
+
+/// Where a lead sits in the follow-up pipeline. Set by the team in the dashboard.
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  CONVERTED
+  LOST
+}
+
+model Lead {
+  id String @id @default(cuid())
+
+  // What the visitor filled in
+  name        String
+  phone       String
+  email       String?
+  description String?
+
+  // Where it came from
+  source  String  @default("website")
+  pageUrl String?
+
+  // Team follow-up
+  status LeadStatus @default(NEW)
+  notes  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([createdAt(sort: Desc)])
+  @@index([status])
+  @@index([phone])
+}
