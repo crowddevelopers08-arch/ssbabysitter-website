@@ -32,7 +32,7 @@ export default function HomeIntro() {
             </Reveal>
             <Reveal variant="zoom-in" delay={450} className="rounded-3xl bg-azure p-4 text-white sm:p-5">
               <p className="text-[10px] font-semibold uppercase tracking-wider text-white/80 sm:text-xs">Anna Nagar · Urapakkam</p>
-              <p className="mt-2 text-sm font-extrabold leading-tight sm:text-lg">Meet our team face-to-face</p>
+              <p className="mt-2 text-sm font-extrabold leading-tight sm:text-lg">Meet our team in person</p>
             </Reveal>
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="relative flex flex-col gap-6 sm:gap-8 xl:flex-row xl:items-center xl:justify-between">
             <div className="max-w-2xl">
               <h2 className="text-[clamp(1.6rem,3vw,2.3rem)] font-extrabold leading-tight tracking-tight text-white">
-                Find a babysitter near me — talk to our team today
+                Find a babysitter near you — talk to our team today
               </h2>
               <p className="mt-3 text-white/85">Reach out by call, text, or WhatsApp.</p>
             </div>

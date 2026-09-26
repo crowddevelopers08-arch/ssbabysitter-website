@@ -19,7 +19,7 @@ const steps = [
   },
   {
     title: "Ongoing Support",
-    text: "A free 1-week trial, replacements when needed, and continued support after placement",
+    text: "A 1-week trial, replacements when needed, and continued support after placement",
     icon: HeartIcon,
   },
 ];

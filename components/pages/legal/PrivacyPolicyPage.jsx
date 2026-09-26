@@ -28,7 +28,7 @@ const sections = [
         list: [
           "Understand your requirement and shortlist suitable, background-verified caregivers near you",
           "Contact you by call, SMS or WhatsApp about your enquiry, placement and trial period",
-          "Coordinate introductions, office visits and the free one-week trial",
+          "Coordinate introductions, office visits and the 1-week trial",
           "Provide ongoing support after placement, including replacements when needed",
           "Keep internal records of placements, and meet our legal and accounting obligations",
           "Improve our website and understand which of our services families are looking for",

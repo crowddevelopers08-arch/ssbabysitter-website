@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 import { ArrowRightIcon, CheckCircleIcon, PhoneIcon, PinIcon, ShieldCheckIcon } from "@/components/ui/Icons";
 import { contact, images } from "@/lib/siteData";
 
-const highlights = ["Background-verified caregivers", "Free 1-week trial", "Two physical offices"];
+const highlights = ["Background-verified caregivers", "1-week trial", "Two physical offices"];
 
 // Hero animations run on page load with pure CSS, so nothing waits on JavaScript.
 export default function HomeHero() {

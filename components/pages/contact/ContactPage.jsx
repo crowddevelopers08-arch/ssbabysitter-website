@@ -26,7 +26,7 @@ export default function ContactPage() {
     <>
       <PageHero
         title="Contact Us"
-        subtitle="Find a babysitter near me — talk to our team today"
+        subtitle="Find a babysitter near you — talk to our team today"
         image={images.contactHero}
         breadcrumbs={[
           { label: "Home", href: "/" },

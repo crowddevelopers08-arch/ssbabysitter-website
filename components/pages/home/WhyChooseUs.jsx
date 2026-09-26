@@ -22,7 +22,7 @@ const features = [
     tags: ["Casagrand Creche"],
   },
   {
-    title: "Free 1-Week Trial",
+    title: "1-Week Trial",
     text: "With every babysitter placement, plus replacements when needed",
     icon: GiftIcon,
     iconClass: "bg-sun/10 text-sun",

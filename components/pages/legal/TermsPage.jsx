@@ -48,7 +48,7 @@ const sections = [
     id: "trial-and-replacement",
     title: "Trial Period and Replacements",
     blocks: [
-      "Every new placement begins with a free one-week trial. If the caregiver is not the right fit for your family during this period, tell us and we will arrange a replacement at no additional placement charge.",
+      "Every new placement begins with a 1-week trial. If the caregiver is not the right fit for your family during this period, tell us and we will arrange a replacement at no additional placement charge.",
       "After the trial period, if a caregiver leaves or is found unsuitable, we will work to arrange a replacement in line with the terms agreed at the time of placement. Replacement requests should be raised with us directly rather than settled privately with the caregiver, so that we can support both sides fairly.",
     ],
   },
@@ -153,7 +153,7 @@ export default function TermsPage() {
         { label: "Terms & Conditions", href: "/terms-and-conditions" },
       ]}
       updatedAt="16 September 2026"
-      intro="These terms set out what you can expect from SS Babysitter and what we ask of you in return — how placements work, what the free trial and replacement cover include, how fees are handled, and where our responsibility as a placement agency begins and ends. Please read them before confirming a placement. If anything here is unclear, call us and we'll walk you through it."
+      intro="These terms set out what you can expect from SS Babysitter and what we ask of you in return — how placements work, what the 1-week trial and replacement cover include, how fees are handled, and where our responsibility as a placement agency begins and ends. Please read them before confirming a placement. If anything here is unclear, call us and we'll walk you through it."
       sections={sections}
     />
   );
